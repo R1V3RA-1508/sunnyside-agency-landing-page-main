@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./tailwind.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {background: url(images/mobile/image-header.jpg) no-repeat; background-size: 100vw auto;}
   </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
-
+  <header class="header flex flex-col justify-between">
+      <img src="images/logo.svg" alt="" class="justify-start">
+      <nav class="header-wrap flex flex-col m-auto space-x-4 bg-white justify-center">
+        <h1>About</h1>
+        <h1>Services</h1>
+        <h1>Projects</h1>
+        <h1>Contact</h1>
+      </nav>
+  </header>
   We are creatives
 
   Transform your brand
