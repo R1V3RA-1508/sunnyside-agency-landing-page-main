@@ -12,23 +12,26 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body {background: url(images/mobile/image-header.jpg) no-repeat; background-size: 100vw auto;}
+    /*body {background: url(images/mobile/image-header.jpg) no-repeat; background-size: 100vw auto;}*/
   </style>
 </head>
 <body>
-  <header class="header flex flex-col justify-between">
+  <header class="header flex flex-row justify-between">
       <img src="images/logo.svg" alt="" class="justify-start w-[35vw] ml-[2vw] mt-[2vw]">
-      <img src="images/icon-hamburger.svg" alt="" class="justify-end w-[10vw] mr-[2vw] mt-[2vw]">
-      <nav class="header-wrap flex-col m-auto space-x-5 mt-[2vh] hidden bg-white justify-center p-5 pr-[30vw] pl-[30vw] rounded-sm">
-        <div class="justify-center">
-          <h1>About</h1>
-          <h1>Services</h1>
-          <h1>Projects</h1>
-          <h1>Contact</h1>
-        </div>
-      </nav>
+      <img src="images/icon-hamburger.svg" alt="" class="justify-end w-[7vw] mr-[4vw] h-[7vw] mt-[2vw]">
   </header>
-  We are creatives
+  <div class="hb-wrap w-full items-center justify-center pb-[10vh]">
+    <nav class="hamburger-menu flex-col m-auto space-y-5 mt-[2vh] w-50 hidden z-10 items-center bg-white justify-center p-5 pr-[30vw] pl-[30vw] rounded-sm">
+          <div class="justify-center flex flex-col items-center">
+            <h1>About</h1>
+            <h1>Services</h1>
+            <h1>Projects</h1>
+            <h1>Contact</h1>
+          </div>
+        </nav>
+  </div>
+  <img src="images/mobile/image-header.jpg" alt="" class="absolute top-[0] -z-1">
+  <h1 class="flex justify-center text-white pb-[20vh]">We are creatives</h1>
 
   Transform your brand
 
